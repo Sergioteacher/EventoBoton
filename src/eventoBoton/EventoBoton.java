@@ -6,6 +6,8 @@ import javax.swing.JFrame;
 import javax.swing.JButton;
 import java.awt.BorderLayout;
 import java.awt.Font;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class EventoBoton {
 
@@ -45,6 +47,11 @@ public class EventoBoton {
 		frmVentanaPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JButton bBoton = new JButton("Di algo !!!");
+		bBoton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				System.out.println("Hola");
+			}
+		});
 		bBoton.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		frmVentanaPrincipal.getContentPane().add(bBoton, BorderLayout.CENTER);
 	}
