@@ -21,6 +21,7 @@ public class EventoBoton {
 	/**
 	 * Launch the application.
 	 * La  funcion estática que inicia el programa
+	 * @param args - valores tipo {@code String}
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
