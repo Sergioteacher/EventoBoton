@@ -9,12 +9,18 @@ import java.awt.Font;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
+/**
+ * La clase pricipal de EventoBoton
+ * @author Sergio Teacher
+ *
+ */
 public class EventoBoton {
 
 	private JFrame frmVentanaPrincipal;
 
 	/**
 	 * Launch the application.
+	 * La  funcion estática que inicia el programa
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -48,6 +54,9 @@ public class EventoBoton {
 		
 		JButton bBoton = new JButton("Di algo !!!");
 		bBoton.addActionListener(new ActionListener() {
+			/**
+			 * Implementación de la acción del botón
+			 */
 			public void actionPerformed(ActionEvent arg0) {
 				System.out.println("Hola");
 			}
